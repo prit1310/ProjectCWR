@@ -15,18 +15,15 @@ const Home = () => {
       </div>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <a href="https://inr.deals/DR71pZ" target="_blank">
+
         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-2">Two-Wheeler Insurance</h2>
           <p className="text-gray-700">Protect your bike with our comprehensive plans.</p>
         </div>
-        </a>
-        <a href="https://inr.deals/8cgoK7" target="_blank">
         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-2">Four-Wheeler Insurance</h2>
           <p className="text-gray-700">Get hassle-free car insurance with easy renewals.</p>
         </div>
-        </a>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 const User = require('../models/user-model');
 const bcrypt = require('bcryptjs');
+const BankDetail = require('../models/bankDetails');
 
 require('dotenv').config();
 
@@ -85,4 +86,25 @@ const home = async (req, res) => {
     }
   };
 
-module.exports = { home , register , login , user };
+  const addBankDetails = async (req, res) =>{
+    try {
+      const { bankName, accountHolder, accountNumber, ifscCode, upiId } = req.body;
+
+      // Check if account number is unique
+      const existingAccount = await BankDetail.findOne({ accountNumber });
+      if (existingAccount) {
+          return res.status(400).json({ msg: "Account number already exists" });
+      }
+
+      // Create a new bank detail entry
+      const newBankDetail = new BankDetail({ bankName, accountHolder, accountNumber, ifscCode, upiId });
+      await newBankDetail.save();
+
+      res.status(201).json({ msg: "Bank details added successfully", bankDetail: newBankDetail });
+  } catch (error) {
+      console.error("Error in addBankDetails:", error);
+      res.status(500).json({ msg: "Server error", error: error.message });
+  }
+  };
+
+module.exports = { home , register , login , user, addBankDetails };

@@ -87,19 +87,6 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block font-medium">Password</label>
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded focus:outline-blue-500"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
-
-          <div>
             <label className="block font-medium">Email Address</label>
             <input
               type="email"
@@ -113,14 +100,14 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block font-medium">District</label>
+            <label className="block font-medium">Password</label>
             <input
-              type="text"
-              name="district"
-              value={formData.district}
+              type="password"
+              name="password"
+              value={formData.password}
               onChange={handleChange}
               className="w-full p-2 border border-gray-300 rounded focus:outline-blue-500"
-              placeholder="Enter your district"
+              placeholder="Enter your password"
               required
             />
           </div>
@@ -139,6 +126,19 @@ const Register = () => {
                 <option key={index} value={state}>{state}</option>
               ))}
             </select>
+          </div>
+
+          <div>
+            <label className="block font-medium">District</label>
+            <input
+              type="text"
+              name="district"
+              value={formData.district}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 rounded focus:outline-blue-500"
+              placeholder="Enter your district"
+              required
+            />
           </div>
 
           <button

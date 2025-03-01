@@ -10,6 +10,7 @@ import Payments from './pages/Payments'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Logout from './pages/Logout'
+import ContactUs from './pages/ContactUs'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/logout' element={<Logout/>} />
+          <Route path='/contact' element={<ContactUs/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

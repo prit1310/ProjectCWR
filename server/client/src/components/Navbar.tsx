@@ -11,12 +11,12 @@ const Navbar = () => {
           <li><NavLink to="/dashboard" className="hover:text-yellow-400">Dashboard</NavLink></li>
           <li><NavLink to="/service" className="hover:text-yellow-400">Services</NavLink></li>
           <li><NavLink to="/report" className="hover:text-yellow-400">Reports</NavLink></li>
-          <li><NavLink to="/payment" className="hover:text-yellow-400">Payments</NavLink></li>
+          <li><NavLink to="/payment" className="hover:text-yellow-400">Payout</NavLink></li>
+          <li><NavLink to="/contact" className="hover:text-yellow-400">Contact Us</NavLink></li>
           {isLoggedIn ? (
             <li><NavLink to="/logout" className="hover:text-yellow-400">Logout</NavLink></li>
           ) : (
             <>
-              <li><NavLink to="/register" className="hover:text-yellow-400">Register</NavLink></li>
               <li><NavLink to="/login" className="hover:text-yellow-400">Login</NavLink></li>
             </>
           )}
