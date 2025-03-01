@@ -107,4 +107,20 @@ const home = async (req, res) => {
   }
   };
 
-module.exports = { home , register , login , user, addBankDetails };
+  const contactUs = async (req, res) => {
+    try {
+      const { email, name } = req.body;
+
+      if (!email || !name) {
+        return res.status(400).json({ message: 'All fields are required' });
+      }
+  
+      return res.status(200).json({ message: 'Message sent successfully' });
+    } catch (error) {
+      console.error('Error in contactUs:', error);
+      res.status(500).json({ msg: 'Server error', error: error.message });
+    }
+  };
+  
+
+module.exports = { home , register , login , user, addBankDetails, contactUs };

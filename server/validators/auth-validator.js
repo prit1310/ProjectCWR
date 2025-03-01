@@ -59,4 +59,14 @@ const bankDetailsSchema = z.object({
         ).optional(),
 });
 
-module.exports = { signUpSchema, loginSchema, bankDetailsSchema };
+const contactUs = z.object({
+    email: z.string({ required_error: "Email is required" })
+        .trim().email({ message: "Invalid email" })
+        .min(3, { message: "Email must be at least 3 characters" })
+        .max(255, { message: "Email must not be more than 255 characters" }),
+        name: z.string({ required_error: "Name is required" })
+        .trim().min(3, { message: "Name must be at least 3 characters" })
+        .max(255, { message: "Name must not be more than 255 characters" }),
+});
+
+module.exports = { signUpSchema, loginSchema, bankDetailsSchema, contactUs};
