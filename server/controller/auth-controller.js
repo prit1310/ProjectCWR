@@ -1,6 +1,7 @@
 const User = require('../models/user-model');
 const bcrypt = require('bcryptjs');
 const BankDetail = require('../models/bankDetails');
+const Contact = require('../models/contact-model');
 
 require('dotenv').config();
 
@@ -109,12 +110,13 @@ const home = async (req, res) => {
 
   const contactUs = async (req, res) => {
     try {
-      const { email, name } = req.body;
+      const { email, name, message } = req.body;
 
-      if (!email || !name) {
+      if (!email || !name || !message) {
         return res.status(400).json({ message: 'All fields are required' });
       }
-  
+      const contactEntry = new Contact({ email, name, message });
+        await contactEntry.save();
       return res.status(200).json({ message: 'Message sent successfully' });
     } catch (error) {
       console.error('Error in contactUs:', error);

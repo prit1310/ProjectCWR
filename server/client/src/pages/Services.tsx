@@ -13,7 +13,7 @@ const Services = () => {
   }, [isLoggedIn, navigate]);
 
   if (!isLoggedIn) {
-    return null; // Prevents rendering while redirecting
+    return null; 
   }
 
   return (
@@ -34,17 +34,17 @@ const Services = () => {
         </a>
       </div>
 
-      <div className="mt-2 p-6">
-        <h1 className="text-4xl font-bold mb-4">Credit Card Services</h1>
+      <div className="mt-2 p-6 ">
+        <h1 className="text-4xl font-bold mb-4 ml-[-30px]">Credit Card Services</h1>
         <div className="grid grid-cols-2 gap-6">
           <a href="https://inr.deals/LVRHTM" target="_blank">
-            <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <div className="bg-gray-100 p-4 rounded-lg shadow-md ml-[-30px]">
               <h2 className="text-2xl font-semibold">Credit Card</h2>
               <p className="text-gray-700">HDFC Bank</p>
             </div>
           </a>
           <a href="https://inr.deals/iL4qEf" target="_blank">
-            <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <div className="bg-gray-100 p-4 rounded-lg shadow-md mr-[-30px]">
               <h2 className="text-2xl font-semibold">Credit Card</h2>
               <p className="text-gray-700">SBI Bank</p>
             </div>
