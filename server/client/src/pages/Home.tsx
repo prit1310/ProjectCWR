@@ -46,8 +46,7 @@ const Home = () => {
             Unlock the Power of Your Spending with Our Credit Cards.<br/>
             Protect Your Ride with the Best Vehicle Insurance.
             Drive with Confidence and Peace of Mind! When it comes to vehicle insurance, you need a plan that fits your 
-            needs, budget, and lifestyle. Whether you’re looking for comprehensive coverage, collision protection, 
-            or liability insurance, we’ve got you covered! Get insured today and stay protected on the road.
+            needs, budget, and lifestyle. 
           </p>
           <p className="text-blue-600 font-semibold">Get a Quote Now!</p>
           <p className="text-gray-700">
