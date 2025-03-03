@@ -30,7 +30,7 @@ const Home = () => {
           <h2 className="text-2xl font-semibold mb-2">Two & Four Wheeler Insurance</h2>
           <p className="text-gray-700 mb-4">
             Protect Your Ride with the Best Vehicle Insurance.<br />
-            Drive with Confidence and Peace of Mind! When it comes to vehicle insurance, you need a plan that fits your 
+            Drive with Confidence and Peace of Mind! <br/>When it comes to vehicle insurance, you need a plan that fits your 
             needs, budget, and lifestyle. Whether you’re looking for comprehensive coverage, collision protection, 
             or liability insurance, we’ve got you covered! Get insured today and stay protected on the road.
           </p>
@@ -44,14 +44,11 @@ const Home = () => {
           <h2 className="text-2xl font-semibold mb-2">Credit Card</h2>
           <p className="text-gray-700 mb-4">
             Unlock the Power of Your Spending with Our Credit Cards.<br/>
-            Protect Your Ride with the Best Vehicle Insurance.
-            Drive with Confidence and Peace of Mind! When it comes to vehicle insurance, you need a plan that fits your 
-            needs, budget, and lifestyle. 
+            Experience Financial Freedom Like Never Before!<br/>Looking to earn rewards, manage your expenses, and get exclusive perks? Our range of credit cards offers something for everyone! Whether you’re a frequent traveler, a shopper, or someone looking for cash back rewards, we’ve got the perfect card for you. 
           </p>
-          <p className="text-blue-600 font-semibold">Get a Quote Now!</p>
+          <p className="text-blue-600 font-semibold">Apply Now and Get Instant Approval!</p>
           <p className="text-gray-700">
-            Don’t wait until it’s too late. Get your personalized quote today and enjoy the peace of mind that comes 
-            with knowing your vehicle is covered.
+          Choose the credit card that suits your lifestyle and unlock a world of rewards today. Apply now and enjoy instant approval with no hidden fees!
           </p>
         </div>
       </div>
