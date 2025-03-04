@@ -11,7 +11,7 @@ dotenv.config();
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'https://projectcwr.onrender.com',
+  origin: 'http://localhost:5173/',
   methods: 'GET, POST, PUT, DELETE, PATCH, HEAD',
   credentials: true,
 };
